@@ -1,4 +1,4 @@
-const ArrayWrapper = require('./array wrapper');
+import { ArrayWrapper } from './array-wrapper.js';
 
 describe('When two instances of this class are added together with the + operator,' + 
 ' the resulting value is the sum of all the elements in both arrays', () => {

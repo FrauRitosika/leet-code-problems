@@ -1,4 +1,4 @@
-const {curry} = require('./curry');
+import { curry } from './curry';
 
 describe('sum of arguments', () => {
    it.each([

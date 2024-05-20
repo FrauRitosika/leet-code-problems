@@ -7,4 +7,4 @@ function createHelloWorld () {
     return func;
 }
 
-module.exports = { createHelloWorld };
+export { createHelloWorld };

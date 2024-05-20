@@ -9,4 +9,4 @@ const map = function (arr, fn) {
     return arr;
 };
 
-module.exports = { map };
+export { map };

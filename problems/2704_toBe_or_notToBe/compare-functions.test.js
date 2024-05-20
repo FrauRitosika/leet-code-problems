@@ -1,4 +1,4 @@
-const { expectFunc } = require('./to be or not to be');
+import { expectFunc } from './compare-functions.js';
 
 describe('toBe(val) accepts another value and returns true if the two values === each other. ' +
     'If they are not equal, it should throw an error "Not Equal".', () => {

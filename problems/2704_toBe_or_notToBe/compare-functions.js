@@ -16,4 +16,4 @@ function expectFunc (expectedVal) {
     };
 }
 
-module.exports = { expectFunc };
+export { expectFunc };

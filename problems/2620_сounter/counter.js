@@ -10,4 +10,4 @@ function createCounter (n) {
     };
 }
 
-module.exports = { createCounter };
+export { createCounter };

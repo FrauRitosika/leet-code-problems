@@ -29,4 +29,4 @@ const areDeeplyEqual = function elqual(objA, objB) {
     return true;
 };
 
-module.exports = { areDeeplyEqual };
+export { areDeeplyEqual };

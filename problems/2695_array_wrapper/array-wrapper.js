@@ -10,4 +10,4 @@ class ArrayWrapper extends Array {
     }
 }
 
-module.exports = ArrayWrapper;
+export { ArrayWrapper };

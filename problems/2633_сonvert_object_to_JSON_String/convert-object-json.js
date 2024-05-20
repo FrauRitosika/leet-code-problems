@@ -17,4 +17,4 @@ const jsonStringify = function jsonConvert(object) {
     }
 };
 
-module.exports = { jsonStringify };
+export { jsonStringify };
