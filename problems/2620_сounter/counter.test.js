@@ -18,7 +18,7 @@ describe('counter function initially returns n and then ' +
             startNumber: -2,
             expected: [-2,-1,0,1]
         }
-    ])( "function should return $expect", ({calls,startNumber,expected}) => {
+    ])( "function should return $expected", ({calls,startNumber,expected}) => {
         const counter = createCounter(startNumber);
         const result = calls.map((el) => counter());
         expect(result).toStrictEqual(expected);
