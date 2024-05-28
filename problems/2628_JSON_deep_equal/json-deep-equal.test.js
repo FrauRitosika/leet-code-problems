@@ -1,4 +1,4 @@
-const {areDeeplyEqual} = require('../2628 JSON deep equal/JSON deep equal');
+import { areDeeplyEqual } from './json-deep-equal.js';
 
 describe('If both values are primitive types, ' + 
 'they are deeply equal if they pass the === equality check', () => {

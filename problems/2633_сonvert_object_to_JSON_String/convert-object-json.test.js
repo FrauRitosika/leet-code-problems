@@ -1,4 +1,4 @@
-const {jsonStringify} = require('./object to json string');
+import { jsonStringify as jsonStringify} from './convert-object-json.js';
 
 test('Return the JSON representation.', () => {
     const obj = { "y": 1, "x": { "y": 1, "x": 2 } }; 

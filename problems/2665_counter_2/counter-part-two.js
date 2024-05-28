@@ -19,4 +19,4 @@ function createCounter (init) {
     };
 };
 
-module.exports = { createCounter };
+export { createCounter };

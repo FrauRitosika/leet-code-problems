@@ -13,8 +13,9 @@ const jsonStringify = function jsonConvert(object) {
     } else if (Array.isArray(object)) {
         return '[' + object.map((el) => jsonConvert(el)) + ']';
     } else {
-        return '{' + Object.keys(object).map(key => '"' + key + '":' + jsonConvert(object[key])) + '}';
+        const obj = Object.keys(object).map(key => `"${key}":${jsonConvert(object[key])}`);
+        return `{${obj}}`;
     }
 };
 
-module.exports = { jsonStringify };
+export { jsonStringify };

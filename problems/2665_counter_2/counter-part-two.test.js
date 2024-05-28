@@ -1,4 +1,4 @@
-const { createCounter } = require('./counter 2');
+import { createCounter } from './counter-part-two';
 
 describe('createCounter should return an object with three functions: increment(), decrement(), reset()', () => {
     it.each([

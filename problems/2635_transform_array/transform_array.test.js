@@ -1,4 +1,4 @@
-const {map} = require('./apply transform over each element in array');
+import { map } from './transform-array.js';
 
 describe('function return a new array with a transformation applied to each element', () => {
     it.each([
