@@ -13,12 +13,12 @@ const promisePool = async function(functions, n) {
     return new Promise(resolve => {
         function pushResult(ms, i) {
             results[i] = ms;
-            if (executeFuncs >= functions.length & emphtyPool === n) resolve(results);
+            if (executeFuncs >= functions.length && emphtyPool === n) resolve(results);
         }
 
-        async function execute() {
+        function execute() {
             const i = executeFuncs;
-            if ((i < functions.length) & (emphtyPool > 0)) {
+            if (i < functions.length && emphtyPool > 0) {
                 executeFuncs += 1;
                 emphtyPool -= 1;
                 functions[i]().then(res => {

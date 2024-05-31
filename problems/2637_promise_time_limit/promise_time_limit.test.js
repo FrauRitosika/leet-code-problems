@@ -11,7 +11,8 @@ describe('function return a new time limited version of the input function', () 
             t: 150,
             islimitReached: false,
             result: 25
-        },
+        }
+        ,
         {
             fn: async (n) => {
                 await new Promise(res => setTimeout(res, 100));
