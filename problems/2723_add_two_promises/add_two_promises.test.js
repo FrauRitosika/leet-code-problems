@@ -1,4 +1,4 @@
-import {addTwoPromises} from './add_two_promises';
+import {addTwoPromises} from './add_two_promises.js';
 
 describe('Function return a new promise, which should resolve with the sum of the two promises`s resolves', () => {
     it.each([

@@ -16,12 +16,10 @@ const timeLimit = function(fn, t) {
                 resolve(res);
             }
 
-            try {
-                getResult();
-            } catch (error) {
+            getResult().catch(error => {
                 clearTimeout(timeout);
                 reject(error);
-            }
+            });
         });
     };
 };

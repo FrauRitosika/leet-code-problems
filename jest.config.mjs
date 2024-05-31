@@ -1,5 +1,4 @@
 /** @type {import('jest').Config} */
-
 const config = {
     transform: {}
 };
