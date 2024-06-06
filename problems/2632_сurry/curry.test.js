@@ -1,4 +1,4 @@
-import { curry } from './curry';
+import { curry } from './curry.js';
 
 describe('sum of arguments', () => {
    it.each([
@@ -24,8 +24,3 @@ describe('sum of arguments', () => {
       expect(mult).toBe(4);
    })
 });
-
-
-
-
-
