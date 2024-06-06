@@ -3,7 +3,7 @@
  * @param {Promise} promise2
  * @return {Promise}
  */
-const addTwoPromises = async function(promise1, promise2) {
+const addTwoPromises = function(promise1, promise2) {
     return new Promise((resolve) => {
         let finalResult = 0;
         Promise.all([promise1, promise2]).then((results) => {

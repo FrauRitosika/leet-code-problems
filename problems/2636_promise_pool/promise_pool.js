@@ -12,6 +12,7 @@ const promisePool = async function(functions, n) {
 
     return new Promise(resolve => {
         function pushResult(ms, i) {
+            if (isNaN(ms) || isNaN(i)) throw new Error();
             results[i] = ms;
             if (executeFuncs >= functions.length && emphtyPool === n) resolve(results);
         }

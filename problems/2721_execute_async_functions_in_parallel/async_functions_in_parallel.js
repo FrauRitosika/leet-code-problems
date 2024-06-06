@@ -13,7 +13,7 @@ const promiseAll = function(functions) {
                 counter += 1;
                 if (counter === [...functions].length) resolve(results);
             }
-        ).catch(error => reject(error)));
+        ).catch(reject));
     });
 };
 

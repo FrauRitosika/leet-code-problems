@@ -9,17 +9,16 @@ const timeLimit = function(fn, t) {
     return function(...args) {
         return new Promise((resolve, reject) => {
             const timeout = setTimeout(() => reject('Time Limit Exceeded'), t);
-
             async function getResult() {
-                const res = await fn(...args);
-                clearTimeout(timeout);
-                resolve(res);
+                try {
+                    const res = await fn(...args);
+                    resolve(res);
+                } catch (error) {
+                    reject(error);
+                } finally { clearTimeout(timeout); }
             }
 
-            getResult().catch(error => {
-                clearTimeout(timeout);
-                reject(error);
-            });
+            getResult();
         });
     };
 };
