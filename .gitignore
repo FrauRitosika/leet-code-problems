@@ -28,6 +28,5 @@ Thumbs.db
 /vendor
 /.venv
 /.gradle
-/.babelrc
 /.vscode
 /hooks
